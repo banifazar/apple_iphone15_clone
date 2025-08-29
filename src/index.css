@@ -39,6 +39,10 @@
     .hero-title {
         @apply text-center font-semibold text-3xl text-gray-100 opacity-0 max-md:mb-10
     }
+
+    .btn {
+        @apply px-5 py-2 rounded-3xl bg-blue my-5 hover:bg-transparent border border-transparent hover:border hover:text-blue hover:border-blue
+    }
 }
 
 @utility screen-max-width {
