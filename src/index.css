@@ -1,36 +1,52 @@
 @import "tailwindcss";
 
-@tailwind base;
-@tailwind components;
 @tailwind utilities;
 
 @theme {
-  --color-blue: #2997ff;
+    --color-blue: #2997ff;
 
-  --color-gray: #86868b;
-  --color-gray-100: #94928d;
-  --color-gray-200: #afafaf;
-  --color-gray-300: #42424570;
+    --color-gray: #86868b;
+    --color-gray-100: #94928d;
+    --color-gray-200: #afafaf;
+    --color-gray-300: #42424570;
 
-  --color-zinc: #101010;
+    --color-zinc: #101010;
 }
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+@layer base {
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    body {
+        color: white;
+        width: 100dvw;
+        overflow-x: hidden;
+        height: 100%;
+        background: #000;
+        border-color: #3b3b3b;
+        user-select: none;
+    }
+
+    canvas {
+        touch-action: none;
+    }
+
+
+    .screen-max-width {
+        margin-inline-start: auto;
+        margin-inline-end: auto;
+        position: relative;
+        max-width: 1120px;
+    }
 }
 
-body {
-  color: white;
-  width: 100dvw;
-  overflow-x: hidden;
-  height: 100%;
-  background: #000;
-  border-color: #3b3b3b;
-  user-select: none;
+
+@utility flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-canvas {
-  touch-action: none;
-}

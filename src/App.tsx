@@ -1,5 +1,13 @@
+import Navbar from "./components/Navbar.tsx";
+import Hero from "./components/Hero.tsx";
+import Highlights from "./components/Highlights.tsx";
+
 const App = () => {
-  return <div className="text-black text-9xl">App</div>;
+    return <main className="bg-black">
+        <Navbar/>
+        <Hero/>
+        <Highlights/>
+    </main>;
 };
 
 export default App;
