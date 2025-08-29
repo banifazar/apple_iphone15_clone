@@ -33,20 +33,28 @@
     canvas {
         touch-action: none;
     }
+}
 
-
-    .screen-max-width {
-        margin-inline-start: auto;
-        margin-inline-end: auto;
-        position: relative;
-        max-width: 1120px;
+@layer components {
+    .hero-title {
+        @apply text-center font-semibold text-3xl text-gray-100 opacity-0 max-md:mb-10
     }
 }
 
+@utility screen-max-width {
+    margin-inline-start: auto;
+    margin-inline-end: auto;
+    position: relative;
+    max-width: 1120px;
+}
 
 @utility flex-center {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+@utility nav-height {
+    height: calc(100vh - 60px);
 }
 
