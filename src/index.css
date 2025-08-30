@@ -55,6 +55,10 @@
     .link {
         @apply text-blue hover:underline cursor-pointer flex items-center text-xl opacity-0 translate-y-20
     }
+
+    .video-carousel_container {
+        @apply relative sm:w-[70vw] w-[88vw] md:h-[70vh] sm:h-[50vh] h-[35vh]
+    }
 }
 
 @utility screen-max-width {
